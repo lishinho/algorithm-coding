@@ -24,7 +24,7 @@ public class TreeNodeInterOrder {
         traverseIt(t1);
     }
 
-    private static void traverseRe(TreeNode root) {
+    public static void traverseRe(TreeNode root) {
         if (root == null) {
             return;
         }
@@ -33,7 +33,7 @@ public class TreeNodeInterOrder {
         traverseRe(root.right);
     }
 
-    private static void traverseIt(TreeNode root) {
+    public static void traverseIt(TreeNode root) {
         Stack<TreeNode> stack = new Stack<>();
         TreeNode cur = root;
         stack.push(cur);

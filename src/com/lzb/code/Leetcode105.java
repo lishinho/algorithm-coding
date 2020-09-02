@@ -13,9 +13,9 @@ public class Leetcode105 {
         buildTree(preOrder, inOrder);
     }
 
-    private static TreeNode buildTree(int[] preorder, int[] inorder) {
+    private static void buildTree(int[] preorder, int[] inorder) {
         int len = preorder.length;
-        return buildChildTree(0, len-1, 0, len-1, preorder, inorder);
+        buildChildTree(0, len-1, 0, len-1, preorder, inorder);
     }
 
     private static TreeNode buildChildTree(int leftP, int rightP, int leftI, int rightI,

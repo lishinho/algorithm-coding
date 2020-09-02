@@ -1,5 +1,7 @@
 package com.lzb.code;
 
+import java.util.Arrays;
+
 public class Leetcode300 {
     /**
      * 给定一个无序的整数数组，找到其中最长上升子序列的长度。
@@ -10,15 +12,26 @@ public class Leetcode300 {
      */
     public static void main(String[] args) {
         int[] nums = new int[]{10, 9, 2, 5, 3, 7, 101, 18};
-        System.out.println(lengthOfLIS(nums));
+        System.out.println("result is " + lengthOfLIS(nums));
     }
 
     private static int lengthOfLIS(int[] nums) {
-        // 定义dp[i]: nums从0到i位置的上升子序列长度
+        // 定义dp[i]: nums从0到i位置的上升子序列长度， 在大循环中动态更新
+        int len = nums.length;
+        if (len < 2) {
+            return len;
+        }
         int[] dp = new int[nums.length];
-        // dp[0] = 1
-        // dp[i]与dp[i-1]关系
-        // if (nums[i]>val) -> dp[i]=dp[i-1]+1
-        return 0;
+        Arrays.fill(dp, 1);
+        int res = 1;
+        for (int i = 1; i < len; i++) {
+            for (int j = 0; j < i; j++) {
+                if (nums[j] > nums[i]) {
+                    dp[i] = Math.max(dp[i], dp[j]+1);
+                    res = Math.max(res, dp[i]);
+                }
+            }
+        }
+        return res;
     }
 }

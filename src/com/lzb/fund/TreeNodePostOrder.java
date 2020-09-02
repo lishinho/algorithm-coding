@@ -24,7 +24,7 @@ public class TreeNodePostOrder {
         traverseIt(t1);
     }
 
-    private static void traverseRe(TreeNode root) {
+    public static void traverseRe(TreeNode root) {
         if (root == null) {
             return;
         }
@@ -33,7 +33,7 @@ public class TreeNodePostOrder {
         System.out.println(root.val);
     }
 
-    private static void traverseIt(TreeNode root) {
+    public static void traverseIt(TreeNode root) {
         // left -> right -> root reverse root -> right -> left
         Stack<TreeNode> stack = new Stack<>();
         List<Integer> list = new ArrayList<>();
