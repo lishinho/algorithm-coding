@@ -10,12 +10,17 @@
 - 链表结构 ListNode
 
 ## 算法基础
-- 递归和迭代 Recursion and Iteration
-- 树的前序遍历 TreeNode PreOrder
-- 树的中序遍历 TreeNode InOrder
-- 树的后序遍历 TreeNode PostOrder
+- 递归和迭代            Recursion and Iteration
+- 树的前序遍历          TreeNode PreOrder
+- 树的中序遍历          TreeNode InOrder
+- 树的后序遍历          TreeNode PostOrder
+- 二分查找              BinarySearch
+- 快速排序              QuickSorting
+- ForkJoin并行计算例子   ForkJoinExample
+- 生产者消费者例子        ProducerConsumer
 
 ## 常见考题代码
+- leetcode 22 括号生成
 - leetcode 99 恢复二叉搜索树
 - leetcode 105 从前序与中序遍历序列构造二叉树
 - leetcode 124 二叉树中最大路径和
