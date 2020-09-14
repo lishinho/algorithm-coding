@@ -1,11 +1,11 @@
-package com.lzb.fund;
+package com.lzb.fund.algorithm;
 
 import com.lzb.struct.TreeNode;
 
 import java.util.Stack;
 
-public class TreeNodePreOrder {
-    // root -> left -> right
+public class TreeNodeInterOrder {
+    // left -> root -> right
     public static void main(String[] args) {
         TreeNode t1 = new TreeNode(1);
         TreeNode t2 = new TreeNode(2);
@@ -24,26 +24,29 @@ public class TreeNodePreOrder {
         traverseIt(t1);
     }
 
-    private static void traverseRe(TreeNode root) {
+    public static void traverseRe(TreeNode root) {
         if (root == null) {
             return;
         }
         traverseRe(root.left);
+        System.out.println(root.val);
         traverseRe(root.right);
     }
 
-    private static void traverseIt(TreeNode root) {
+    public static void traverseIt(TreeNode root) {
         Stack<TreeNode> stack = new Stack<>();
         TreeNode cur = root;
         stack.push(cur);
         while (cur != null && !stack.isEmpty()) {
+            while (cur.left != null) {
+                stack.push(cur.left);
+                cur = cur.left;
+            }
             cur = stack.pop();
             System.out.println(cur.val);
             if (cur.right != null) {
                 stack.push(cur.right);
-            }
-            if (cur.left != null) {
-                stack.push(cur.left);
+                cur = cur.right;
             }
         }
     }

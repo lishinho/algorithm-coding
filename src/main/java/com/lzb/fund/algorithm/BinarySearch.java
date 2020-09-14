@@ -1,4 +1,4 @@
-package com.lzb.fund;
+package com.lzb.fund.algorithm;
 
 public class BinarySearch {
     public static void main(String[] args) {

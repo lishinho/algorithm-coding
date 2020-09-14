@@ -1,4 +1,4 @@
-package com.lzb.fund;
+package com.lzb.fund.algorithm;
 
 import com.lzb.struct.ListNode;
 

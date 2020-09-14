@@ -1,4 +1,4 @@
-package com.lzb.fund;
+package com.lzb.fund.multiThread;
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
