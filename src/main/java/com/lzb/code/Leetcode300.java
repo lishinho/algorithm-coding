@@ -15,22 +15,22 @@ public class Leetcode300 {
         System.out.println("result is " + lengthOfLIS(nums));
     }
 
-    private static int lengthOfLIS(int[] nums) {
-        // 定义dp[i]: nums从0到i位置的上升子序列长度， 在大循环中动态更新
+    public static int lengthOfLIS(int[] nums) {
         int len = nums.length;
         if (len < 2) {
             return len;
         }
-        int[] dp = new int[nums.length];
+        // 定义dp[i]: nums从0到i位置的上升子序列长度， 在大循环中动态更新
+        int[] dp = new int[len];
         Arrays.fill(dp, 1);
         int res = 1;
         for (int i = 1; i < len; i++) {
             for (int j = 0; j < i; j++) {
-                if (nums[j] > nums[i]) {
+                if (nums[j] < nums[i]) {
                     dp[i] = Math.max(dp[i], dp[j]+1);
-                    res = Math.max(res, dp[i]);
                 }
             }
+            res = Math.max(res, dp[i]);
         }
         return res;
     }

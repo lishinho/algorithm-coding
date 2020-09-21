@@ -9,12 +9,7 @@ public class Leetcode14 {
      * 输入: ["flower","flow","flight"]
      * 输出: "fl"
      */
-    public static void main(String[] args) {
-        String[] strs = new String[]{"flower", "flow", "flight", "fuck"};
-        System.out.println(longestCommonPrefix(strs));
-    }
-
-    private static String longestCommonPrefix(String[] strs) {
+    public static String longestCommonPrefix(String[] strs) {
         if (strs == null || strs.length == 0) {
             return "";
         }

@@ -15,11 +15,7 @@ public class Leetcode22 {
      *        "()()()"
      *      ]
      */
-    public static void main(String[] args) {
-        System.out.println(generateParenthesis(3));
-    }
-
-    private static List<String> generateParenthesis(int n) {
+    public static List<String> generateParenthesis(int n) {
         List<String> strs = new ArrayList<>();
         generate(strs, "", 0, 0, n);
         return strs;
