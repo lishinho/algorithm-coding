@@ -32,14 +32,23 @@ public class LeetcodeTest {
         Assert.assertEquals("34odmap", Leetcode76.minWindow("uwe34odmappc", "3pa"));
         System.out.println("LeetCode76Test costs time in nano seconds: " + (System.nanoTime()-start));
     }
-    
+
     @Test
-    public void LeetCode300Test() {
+    public void LeetCode188Test() {
         long start = System.nanoTime();
         Assert.assertEquals(4, Leetcode300.lengthOfLIS(new int[]{10, 9, 2, 5, 3, 7, 101, 18}));
         Assert.assertEquals(0, Leetcode300.lengthOfLIS(new int[]{}));
         Assert.assertEquals(3, Leetcode300.lengthOfLIS(new int[]{2, 9, 73, -5, 0}));
         System.out.println("LeetCode76Test costs time in nano seconds: " + (System.nanoTime()-start));
+    }
+    
+    @Test
+    public void LeetCode300Test() {
+        long start = System.nanoTime();
+        Assert.assertEquals(2, Leetcode188.maxProfit_k_any(2, new int[]{2, 4, 1}));
+        Assert.assertEquals(7, Leetcode188.maxProfit_k_any(2, new int[]{3, 2, 6, 5, 0, 3}));
+        Assert.assertEquals(0, Leetcode188.maxProfit_k_any(3, new int[]{3}));
+        System.out.println("LeetCode188Test costs time in nano seconds: " + (System.nanoTime()-start));
     }
 
 }

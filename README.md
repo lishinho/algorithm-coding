@@ -19,6 +19,7 @@
 - leetcode 99  恢复二叉搜索树 （树的遍历）
 - leetcode 105 从前序与中序遍历序列构造二叉树 （树的遍历）
 - leetcode 124 二叉树中最大路径和 （树的遍历）
+- leetcode 188 买卖股票的最佳时机 （动态规划）
 - leetcode 300 最长上升子序列 （动态规划）
 - leetcode 322 零钱兑换 （贪心）
 ---
@@ -41,11 +42,13 @@
 ---
 ## 设计模式
 - 适配器模式  Adapter
+- 观察者模式  Observer
 ---
 ## 数据结构
 - 二叉树结构   TreeNode
 - 链表结构     ListNode
 - 布尔闩      BooleanLatch
+- lru缓存      LRUCache
 ---
 
 ## TODO

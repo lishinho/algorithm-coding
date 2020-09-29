@@ -1,4 +1,5 @@
 # Week 4
+2020.9.20 - 2020.9.27
 
 - 增加了JUnit测试， 并重构部分测试
 - 重构文章结构
@@ -19,3 +20,12 @@ jdk8/bin/java -Xms1024m -Xmx2048m   -cp /root/guardian-tool  -jar /root/guardian
 - jmeter安装使用 最大线程 循环线程 设置cookie参数 保存测试
 - docker-compose 启动 设置参数
 - hadoop组件开启web页面认证
+
+
+# Week 5
+2020.9.28 - 2020.10.11
+
+- 增加leetcode188，股票问题的动态规划并添加单测
+- 整理sla
+- 丰富了AQS以及redis的部分内容
+- zookeeper的基本概念及使用

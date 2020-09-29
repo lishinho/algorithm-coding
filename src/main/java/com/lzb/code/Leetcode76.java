@@ -23,6 +23,7 @@ public class Leetcode76 {
             mp[c] -= 1;
             if (mp[c] >= 0) cnt += 1;
             while (cnt == m) {
+                // can be optimised here?
                 if (winSize == -1 || winSize > right - left + 1) {
                     res = s.substring(left, right + 1);
                     winSize = right - left + 1;
