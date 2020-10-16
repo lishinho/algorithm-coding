@@ -29,3 +29,14 @@ jdk8/bin/java -Xms1024m -Xmx2048m   -cp /root/guardian-tool  -jar /root/guardian
 - 整理sla
 - 丰富了AQS以及redis的部分内容
 - zookeeper的基本概念及使用
+
+# Week 6
+2020.10.12 - 2020.10.18
+ 
+- 修复assert相关及其他bug
+- golang 项目设计api
+- 复习golang基本内容
+- 增加leetcode516， 也是一道动态规划题， 字符串最大回文子串
+- java cas内容
+- 图的遍历算法
+- 增加lru缓存设计，java和golang两个版本

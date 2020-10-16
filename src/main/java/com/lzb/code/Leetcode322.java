@@ -18,11 +18,13 @@ public class Leetcode322 {
         System.out.println(nums);
     }
 
-    private static int coinChange(int[] coins, int mount) {
-        assert coins == null || coins.length == 0 : "coins can not be null";
+    public static int coinChange(int[] coins, int mount) {
+        // if assert <expression> is true, task goes on
+        // if assert <expression> is false, task throws exception
+        assert coins != null && coins.length > 0 : "coins can not be null";
         int res = 0;
         for (int i = coins.length-1; i >= 0; i--) {
-            if (mount > coins[i]) {
+            if (mount >= coins[i]) {
                 nums.append(coins[i]).append("*").append(mount/coins[i]).append("  ");
                 res += mount/coins[i];
                 mount = mount%coins[i];

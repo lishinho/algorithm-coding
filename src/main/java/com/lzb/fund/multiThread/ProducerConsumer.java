@@ -43,11 +43,13 @@ public class ProducerConsumer {
             Producer producer = new Producer();
             producer.start();
         }
+
         // consumer will wait for the producer thread
         for (int i = 0; i < 5; i++) {
             Consumer consumer = new Consumer();
             consumer.start();
         }
+
         // producer put product into blockingQueue and consumer thread would run concurrently
         for (int i = 0; i < 3; i++) {
             Producer producer = new Producer();

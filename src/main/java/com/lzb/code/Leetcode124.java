@@ -45,7 +45,9 @@ public class Leetcode124 {
         }
         int left = Math.max(0, getMax(root.left));
         int right = Math.max(0, getMax(root.right));
+        // 全局变量max存第1种情况
         max = Math.max(max, root.val+left+right);
+        // 回溯第二种情况
         return Math.max(left, right) + root.val;
     }
 }

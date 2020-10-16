@@ -28,6 +28,7 @@ public class Leetcode22 {
         if (leftCnt == n && rightCnt == n) {
             strs.add(str);
         }
+        // can be optimised here ?
         if (leftCnt >= rightCnt) {
             generate(strs, str+"(", leftCnt+1, rightCnt, n);
             generate(strs, str+")", leftCnt, rightCnt+1, n);
