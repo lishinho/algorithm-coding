@@ -27,6 +27,8 @@ public class Leetcode99 {
      *     }
      */
     private static TreeNode t1, t2, pre;
+    // t1, t2 are exchanged nodes
+    // pre is currnet node
     private static void recoverTree(TreeNode root) {
         inorder(root);
         int tmp = t1.val;

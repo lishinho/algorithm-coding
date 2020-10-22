@@ -19,7 +19,7 @@ public class Leetcode105 {
     }
 
     private static TreeNode buildChildTree(int leftP, int rightP, int leftI, int rightI,
-                                       int[] preOrder, int[] inOrder) {
+                                           int[] preOrder, int[] inOrder) {
         if (leftP > rightP || leftI > rightI) {
             return null;
         }

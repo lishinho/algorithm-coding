@@ -48,6 +48,9 @@ public class Leetcode188 {
     }
 
     private static int maxProfit_k_inf(int[] prices) {
+        // dp[i][0] the i day doesn't have stock = max(dp[i-1][0], dp[i-1][1]+prices[i])
+        // dp[i][1] the i day has stock = max(dp[i-1][1],dp[i-1][0]-prices[i])
+        // the result is dp[n][0]
         int n = prices.length;
         int dp_i_0 = 0, dp_i_1 = Integer.MIN_VALUE;
         for (int i = 0; i < n; i++) {

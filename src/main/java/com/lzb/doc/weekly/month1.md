@@ -40,3 +40,10 @@ jdk8/bin/java -Xms1024m -Xmx2048m   -cp /root/guardian-tool  -jar /root/guardian
 - java cas内容
 - 图的遍历算法
 - 增加lru缓存设计，java和golang两个版本
+
+# Week 7 
+2020.10.19 - 2020.10.26
+
+- redis和zookeeper等一些分布式框架
+- golang基础
+- 支持
