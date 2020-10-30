@@ -43,6 +43,14 @@ public class LeetcodeTest {
     }
 
     @Test
+    public void LeetCode214Test() {
+        long start = System.nanoTime();
+        Assert.assertEquals("aaacecaaa", Leetcode214.shortestPalindrome("aacecaaa"));
+        Assert.assertEquals("dcbabcd", Leetcode214.shortestPalindrome("abcd"));
+        System.out.println("LeetCode214Test costs time in nano seconds: " + (System.nanoTime()-start));
+    }
+
+    @Test
     public void LeetCode300Test() {
         long start = System.nanoTime();
         Assert.assertEquals(4, Leetcode300.lengthOfLIS(new int[]{10, 9, 2, 5, 3, 7, 101, 18}));

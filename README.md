@@ -21,6 +21,7 @@
 - leetcode 105 从前序与中序遍历序列构造二叉树 （树的遍历）
 - leetcode 124 二叉树中最大路径和 （树的遍历）
 - leetcode 188 买卖股票的最佳时机 （动态规划）
+- leetcode 214 最短回文串 (贪心)
 - leetcode 300 最长上升子序列 （动态规划）
 - leetcode 322 零钱兑换 （贪心）
 - leetcode 516 最长回文子字符串（动态规划）
@@ -37,6 +38,7 @@
 ### 多线程
 - ForkJoin并行计算例子   ForkJoinExample
 - 生产者消费者例子        ProducerConsumer
+- 高并发测试实例          MultiThreadTest
 
 ### AOP动态代理
 - JDK接口代理           JDKProxyDemo
