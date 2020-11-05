@@ -25,6 +25,15 @@ public class LeetcodeTest {
     }
 
     @Test
+    public void LeetCode55Test() {
+        long start = System.nanoTime();
+        Assert.assertEquals(true, Leetcode55.canJump(new int[]{2,3,1,1,4}));
+        Assert.assertEquals(false, Leetcode55.canJump(new int[]{3,2,1,0,4}));
+        Assert.assertEquals(false, Leetcode55.canJump(new int[]{1,0,5}));
+        System.out.println("LeetCode55Test costs time in nano seconds: " + (System.nanoTime()-start));
+    }
+
+    @Test
     public void LeetCode76Test() {
         long start = System.nanoTime();
         Assert.assertEquals("BANC", Leetcode76.minWindow("ADOBECODEBANC", "ABC"));

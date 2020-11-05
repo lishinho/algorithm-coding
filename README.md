@@ -16,6 +16,7 @@
 - leetcode 14  最大共同字符串前缀 （字符串）
 - leetcode 22  括号生成 （回溯）
 - leetcode 25  k个一组反转链表 （链表）
+- leetcode 55  跳跃游戏 （贪心）
 - leetcode 76  最小覆盖子串 （双指针）
 - leetcode 99  恢复二叉搜索树 （树的遍历）
 - leetcode 105 从前序与中序遍历序列构造二叉树 （树的遍历）
@@ -43,6 +44,10 @@
 ### AOP动态代理
 - JDK接口代理           JDKProxyDemo
 - Cglib继承代理         CglibProxyDemo
+
+### JAVA SE
+- equals方法和==的区别   EqualsAndPlusPlus
+
 ---
 ## 设计模式
 - 适配器模式  Adapter
