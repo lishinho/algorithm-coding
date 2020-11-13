@@ -1,5 +1,7 @@
 # lishinho's algorithm-coding
 > lishinho算法模板，用于积累各基础面试算法逻辑，目前以JAVA语言刷
+>
+> 现阶段也已经有了[golang版本的algorithm code](https://github.com/lishinho/algorithm-coding-golang)
 > 
 > 学习建议：数据结构 -> 算法基础 -> code
 >
@@ -26,6 +28,7 @@
 - leetcode 300 最长上升子序列 （动态规划）
 - leetcode 322 零钱兑换 （贪心）
 - leetcode 516 最长回文子字符串（动态规划）
+- leetcode 198&213&337 打劫 (动态规划)
 ---
 ## 基础
 ### 算法
@@ -47,6 +50,7 @@
 
 ### JAVA SE
 - equals方法和==的区别   EqualsAndPlusPlus
+- string replace方法    StringReplace
 
 ---
 ## 设计模式

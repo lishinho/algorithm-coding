@@ -83,7 +83,15 @@ public class LeetcodeTest {
         Assert.assertEquals(4, Leetcode516.longestPalindromeSubseq("bbbab"));
         Assert.assertEquals(2, Leetcode516.longestPalindromeSubseq("cbbd"));
         Assert.assertEquals(9, Leetcode516.longestPalindromeSubseq("ccccdcccc"));
-        System.out.println("LeetCode322Test costs time in nano seconds: " + (System.nanoTime()-start));
+        System.out.println("LeetCode516Test costs time in nano seconds: " + (System.nanoTime()-start));
+    }
+
+    @Test
+    public void LeetCodeRobTest() {
+        long start = System.nanoTime();
+        Assert.assertEquals(4, LeetcodeRob.rob(new int[]{1,2,3,1}));
+        Assert.assertEquals(12, LeetcodeRob.rob(new int[]{2,7,9,3,1}));
+        System.out.println("LeetCodeRobTest costs time in nano seconds: " + (System.nanoTime()-start));
     }
 
 }
